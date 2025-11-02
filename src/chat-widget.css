@@ -1,0 +1,95 @@
+:root {
+  --chat-bg: #ffffff;
+  --chat-header-bg: linear-gradient(to right, #6366f1, #8b5cf6);
+  --chat-header-text: #ffffff;
+  --chat-border: #e5e7eb;
+  --chat-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  --chat-radius: 12px;
+  --chat-font: 'Inter', sans-serif;
+  --chat-input-bg: #f9fafb;
+  --chat-input-border: #d1d5db;
+  --chat-input-focus: #6366f1;
+  --chat-message-text: #374151;
+  --chat-message-bg: #f3f4f6;
+}
+
+/* Container */
+#n8n-chat {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 350px;
+  max-width: 100%;
+  background: var(--chat-bg);
+  border: 1px solid var(--chat-border);
+  border-radius: var(--chat-radius);
+  box-shadow: var(--chat-shadow);
+  font-family: var(--chat-font);
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Header */
+#n8n-chat .n8n-chat-header {
+  background: var(--chat-header-bg);
+  color: var(--chat-header-text);
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Message Area */
+#n8n-chat .n8n-chat-messages {
+  padding: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: var(--chat-bg);
+}
+
+#n8n-chat .n8n-chat-message {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background: var(--chat-message-bg);
+  border-radius: 8px;
+  color: var(--chat-message-text);
+  font-size: 0.875rem;
+}
+
+/* Input */
+#n8n-chat .n8n-chat-input {
+  padding: 12px 16px;
+  background: var(--chat-input-bg);
+  border-top: 1px solid var(--chat-border);
+}
+
+#n8n-chat .n8n-chat-input input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--chat-input-border);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+#n8n-chat .n8n-chat-input input:focus {
+  border-color: var(--chat-input-focus);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+/* Button (optional) */
+#n8n-chat .n8n-chat-header button {
+  background: transparent;
+  border: none;
+  color: var(--chat-header-text);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+#n8n-chat .n8n-chat-header button:hover {
+  opacity: 0.8;
+}
