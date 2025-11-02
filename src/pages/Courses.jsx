@@ -9,7 +9,7 @@ import AxiosToastError from '../utils/AxiosToastError';
 import { HiOutlinePencilSquare } from 'react-icons/hi2';
 import { RiDeleteBinLine } from 'react-icons/ri';
 import EditCourse from '../components/EditCourse';
-import ConfirmBox from '../components/confirmBox';
+import ConfirmBox from '../components/ConfirmBox';
 import toast from 'react-hot-toast';
 
 
