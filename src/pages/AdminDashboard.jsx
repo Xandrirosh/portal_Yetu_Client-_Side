@@ -13,7 +13,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { AccountsLineGraph } from '../components/AccountsLineGraph';
 import { ExpenseBarGraph } from '../components/ExpenseBarGraph';
-import EventCalendar from '../components/eventCalender';
+import EventCalendar from '../components/EventCalender';
 import Table from '../components/Table';
 import { HiOutlinePencilSquare } from 'react-icons/hi2';
 import { RiDeleteBinLine } from 'react-icons/ri';
